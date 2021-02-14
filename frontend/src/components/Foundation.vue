@@ -29,7 +29,7 @@ export default defineComponent({
 #foundation {
   position: absolute;
   background: #cccccc;
-  margin-top: 94px;
+  margin-top: 194px;
   width: 400px;
   height: 300px;
 }

@@ -35,11 +35,11 @@ export default defineComponent({
 }
 
 #door-knob {
-  background: #b46126;
-  left: 15px;
-  height: 8px;
-  width: 43px;
-  bottom: 150px;
   position: absolute;
+  background: #b46126;
+  left: 10px;
+  height: 7px;
+  width: 35px;
+  bottom: 115px;
 }
 </style>

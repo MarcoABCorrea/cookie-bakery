@@ -29,7 +29,7 @@ export default defineComponent({
   top: 20%;
   position: absolute;
   left: 10%;
-  border-top: 15px solid #666;
+  border-top: 12px solid #666;
   width: 65%;
   padding: 7px;
   text-align: center;

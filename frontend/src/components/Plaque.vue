@@ -20,10 +20,10 @@ export default defineComponent({
   padding: 20px;
   font-size: 20px;
   font-weight: bold;
-  z-index: 3;
   font-family: Arial, Helvetica, sans-serif;
-  top: 65px;
-  right: 65px;
+  top: 170px;
+  right: 45px;
   height: 5px;
+  z-index: 3;
 }
 </style>

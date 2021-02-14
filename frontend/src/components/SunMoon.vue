@@ -29,12 +29,13 @@ div {
   cursor: pointer;
   height: 100px;
   width: 100px;
-  bottom: 70px;
+  top: 10px;
   border-radius: 50%;
+  z-index: 5;
 }
 
 #sun {
-  left: 300px;
+  left: 270px;
   background: #fae83d;
 }
 
