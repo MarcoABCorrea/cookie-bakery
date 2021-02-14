@@ -40,7 +40,8 @@ body {
 #canvas {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  padding: 100px 0;
+  height: calc(100vh - 200px);
 }
 
 .day {

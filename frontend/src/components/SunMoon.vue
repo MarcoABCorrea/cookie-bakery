@@ -25,20 +25,21 @@ export default defineComponent({
 
 <style scoped>
 div {
-  height: 130px;
-  width: 130px;
-  border-radius: 50%;
   position: relative;
-  top: 10px;
   cursor: pointer;
+  height: 100px;
+  width: 100px;
+  bottom: 70px;
+  border-radius: 50%;
 }
 
 #sun {
-  left: 400px;
+  left: 300px;
   background: #fae83d;
 }
+
 #moon {
-  right: 200px;
+  right: 100px;
   box-shadow: 15px 15px 0 0 #c7b5b5;
 }
 </style>

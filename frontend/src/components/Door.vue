@@ -22,11 +22,11 @@ export default defineComponent({
 <style scoped>
 #door {
   position: absolute;
-  width: 170px;
   background: #f6b26b;
-  height: 320px;
+  height: 225px;
+  width: 115px;
   bottom: 0;
-  left: 215px;
+  left: 145px;
   cursor: pointer;
 }
 

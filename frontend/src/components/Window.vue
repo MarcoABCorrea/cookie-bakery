@@ -30,14 +30,14 @@ export default defineComponent({
 
 <style scoped>
 .window {
-  margin: 40px 50px;
+  margin: 40px 25px;
   display: block;
-  height: 130px;
-  width: 130px;
+  height: 85px;
+  width: 85px;
   background: #cfe2f3;
   z-index: 4;
   border-radius: 50%;
-  border: 7px solid #9fc5e8;
+  border: 4px solid #9fc5e8;
   cursor: pointer;
 }
 
@@ -46,8 +46,8 @@ export default defineComponent({
 }
 
 .cookie {
-  margin: 40px 50px;
-  width: 150px;
+  margin: 40px 25px;
+  width: 100px;
   cursor: pointer;
 }
 </style>

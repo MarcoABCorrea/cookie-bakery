@@ -13,18 +13,17 @@ export default defineComponent({
 #plaque {
   position: relative;
   display: inline-flex;
-  width: 180px;
-  height: 35px;
   align-items: center;
-  right: 60px;
   background: #93c47d;
-  border: 7px solid #76a95c;
+  border: 3px solid #76a95c;
   color: #274e13;
   padding: 20px;
   font-size: 20px;
   font-weight: bold;
-  top: 240px;
   z-index: 3;
   font-family: Arial, Helvetica, sans-serif;
+  top: 65px;
+  right: 65px;
+  height: 5px;
 }
 </style>

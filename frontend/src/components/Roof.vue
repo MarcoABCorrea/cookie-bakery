@@ -12,12 +12,11 @@ export default defineComponent({
 <style scoped>
 #roof {
   position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 300px solid transparent;
-  border-right: 300px solid transparent;
-  border-bottom: 280px solid #dd7e6b;
+  top: 9px;
   background: transparent;
   z-index: 2;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 185px solid #dd7e6b;
 }
 </style>

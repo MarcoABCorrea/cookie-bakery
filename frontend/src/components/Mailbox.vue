@@ -1,5 +1,5 @@
 <template>
-  <div id="mailbox" :class="{ drop }" @click="drop = true">
+  <div id="mailbox" :class="{ drop }" @click="drop = !drop">
     <span>Mailbox</span>
   </div>
 </template>
@@ -16,13 +16,13 @@ export default defineComponent({
 
 <style scoped>
 #mailbox {
-  width: 120px;
-  background: #999999;
-  height: 100px;
   position: absolute;
-  right: 65px;
-  bottom: 40px;
   cursor: pointer;
+  background: #999999;
+  height: 85px;
+  width: 100px;
+  right: 20px;
+  bottom: 40px;
 }
 
 #mailbox span {
@@ -31,7 +31,7 @@ export default defineComponent({
   left: 10%;
   border-top: 15px solid #666;
   width: 65%;
-  padding: 10px;
+  padding: 7px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #666;
@@ -56,7 +56,7 @@ export default defineComponent({
   }
   to {
     opacity: 1;
-    transform: translate3d(0, 200px, 0) rotate3d(0, 0, 0, 0deg);
+    transform: translate3d(0, 150px, 0) rotate3d(0, 0, 0, 0deg);
   }
 }
 </style>

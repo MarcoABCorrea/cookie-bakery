@@ -28,10 +28,10 @@ export default defineComponent({
 <style scoped>
 #foundation {
   position: absolute;
-  margin-top: 280px;
-  width: 600px;
   background: #cccccc;
-  height: 400px;
+  margin-top: 94px;
+  width: 400px;
+  height: 300px;
 }
 
 .right {
