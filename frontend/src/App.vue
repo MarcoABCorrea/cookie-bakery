@@ -1,9 +1,9 @@
 <template>
-  <div id="canvas" :class="{ night: isNight }">
+  <div id="canvas" :class="{ night }">
     <SunMoon @changeMode="changeMode"></SunMoon>
     <Roof></Roof>
     <Plaque></Plaque>
-    <Foundation :night="isNight"></Foundation>
+    <Foundation :night="night"></Foundation>
   </div>
 </template>
 
@@ -23,11 +23,11 @@ export default defineComponent({
     Foundation,
   },
   data() {
-    return { isNight: false };
+    return { night: false };
   },
   methods: {
     changeMode() {
-      this.isNight = !this.isNight;
+      this.night = !this.night;
     },
   },
 });

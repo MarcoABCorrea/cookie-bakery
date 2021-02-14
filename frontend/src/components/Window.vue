@@ -1,6 +1,11 @@
 <template>
   <div class="window-container">
-    <div v-if="visible" @mouseover="visible = !visible" class="window"></div>
+    <div
+      v-if="visible"
+      @mouseover="visible = !visible"
+      class="window"
+      :disabled="night"
+    ></div>
     <img
       v-else
       @mouseleave="visible = !visible"
@@ -14,6 +19,9 @@
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "Window",
+  props: {
+    night: Boolean,
+  },
   data() {
     return { visible: true };
   },
@@ -31,6 +39,10 @@ export default defineComponent({
   border-radius: 50%;
   border: 7px solid #9fc5e8;
   cursor: pointer;
+}
+
+.window[disabled="true"] {
+  pointer-events: none;
 }
 
 .cookie {

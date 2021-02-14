@@ -1,8 +1,8 @@
 <template>
   <div id="foundation">
-    <Window class="left" :disabled="night"></Window>
-    <Window class="right" :disabled="night"></Window>
-    <Door></Door>
+    <Window class="left" :night="night"></Window>
+    <Window class="right" :night="night"></Window>
+    <Door :night="night"></Door>
     <Mailbox></Mailbox>
   </div>
 </template>

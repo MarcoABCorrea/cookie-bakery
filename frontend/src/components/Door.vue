@@ -1,5 +1,5 @@
 <template>
-  <div id="door">
+  <div id="door" @click="order" :disabled="night">
     <div id="door-knob"></div>
   </div>
 </template>
@@ -8,6 +8,14 @@
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "Door",
+  props: {
+    night: Boolean,
+  },
+  methods: {
+    order() {
+      console.log("make order", new Date().getTime());
+    },
+  },
 });
 </script>
 
@@ -19,6 +27,11 @@ export default defineComponent({
   height: 320px;
   bottom: 0;
   left: 215px;
+  cursor: pointer;
+}
+
+#door[disabled="true"] {
+  pointer-events: none;
 }
 
 #door-knob {
