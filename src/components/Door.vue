@@ -14,9 +14,14 @@ export default defineComponent({
   },
   methods: {
     order() {
-      axios.post("http://localhost:3001").then((result) => {
-        console.log("Cookie ordered!", result.data);
-      });
+      axios
+        .post("http://localhost:3001")
+        .then((result) => {
+          console.log("Cookie ordered!", result.data);
+        })
+        .catch(() => {
+          console.error("Some error occurred!");
+        });
     },
   },
 });
