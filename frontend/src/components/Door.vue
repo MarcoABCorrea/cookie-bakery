@@ -6,6 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import axios from "axios";
 export default defineComponent({
   name: "Door",
   props: {
@@ -13,7 +14,9 @@ export default defineComponent({
   },
   methods: {
     order() {
-      console.log("make order", new Date().getTime());
+      axios.post("http://localhost:3001").then((result) => {
+        console.log("Cookie ordered!", result.data);
+      });
     },
   },
 });
